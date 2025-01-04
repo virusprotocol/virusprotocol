@@ -6,11 +6,43 @@ An advanced TypeScript-based backend system implementing the Virus Protocol with
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)](https://www.typescriptlang.org/)
 [![Solana](https://img.shields.io/badge/Solana-Integrated-green)](https://solana.com)
 [![OpenAI](https://img.shields.io/badge/OpenAI-GPT4-purple)](https://openai.com)
-[![Docker](https://img.shields.io/badge/Docker-Required-blue)](https://www.docker.com/)
 
 ## 🚀 Features
 
-[Previous features section remains the same...]
+### Core Systems
+
+- **Memory Management System**
+  - Short-term memory with configurable retention
+  - Long-term memory with importance scoring
+  - Automatic memory categorization (facts, concepts, patterns)
+  - Memory retrieval based on relevance and context
+
+- **Context Evolution**
+  - Dynamic context windows (24h, 168h, 720h)
+  - Automated context summarization
+  - Topic extraction and insight tracking
+  - Version-controlled context evolution
+
+- **Tool Integration**
+  - Real-time Solana blockchain analysis
+  - Cryptocurrency price tracking
+  - Token metrics and market analysis
+  - Wallet analysis capabilities
+
+### Technical Features
+
+- **Advanced Middleware Stack**
+  - Authentication and security layers
+  - Rate limiting and load balancing
+  - Error handling and monitoring
+  - Request validation
+
+- **Scalability**
+  - Redis-based caching
+  - Queue management for evolution processing
+  - Optimized database queries
+  - Docker containerization
+
 
 ## 🛠 Prerequisites
 
