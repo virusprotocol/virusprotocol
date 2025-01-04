@@ -203,9 +203,6 @@ We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) f
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔒 Security
-
-For security concerns, please email security@yourdomain.com. See our [Security Policy](SECURITY.md) for details.
 
 ## 🙏 Acknowledgments
 
