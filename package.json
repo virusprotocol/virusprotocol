@@ -1,0 +1,56 @@
+{
+  "name": "virus-protocol",
+  "version": "0.0.3",
+  "type": "module",
+  "bin": {
+    "virus-protocol": "./dist/bin/virus-protocol.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+    "dev": "ts-node-esm src/index.ts",
+    "dev:cli": "ts-node-esm src/bin/virus-protocol.ts",
+    "build": "tsc && npm run build:cli",
+    "build:cli": "tsc && chmod +x dist/bin/virus-protocol.js && echo '#!/usr/bin/env node' | cat - dist/bin/virus-protocol.js > temp && mv temp dist/bin/virus-protocol.js",
+    "migrate": "ts-node migrations/migrate.ts",
+    "cli": "node dist/bin/virus-protocol.js"
+  },
+  "dependencies": {
+    "@solana/spl-token": "^0.4.9",
+    "dotenv": "^16.3.1",
+    "@solana/web3.js": "^1.98.0",
+    "axios": "^1.7.9",
+    "bs58": "^6.0.0",
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "connect-redis": "^8.0.1",
+    "cookie": "^1.0.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.1.5",
+    "express-session": "^1.18.1",
+    "helmet": "^7.2.0",
+    "inquirer": "^9.2.10",
+    "ioredis": "^5.4.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.9.3",
+    "openai": "^4.77.0",
+    "ora": "^8.1.1",
+    "rate-limit-redis": "^4.1.1",
+    "tweetnacl": "^1.0.3",
+    "twitter-api-v2": "^1.19.0",
+    "ws": "^8.18.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/express-session": "^1.18.1",
+    "@types/inquirer": "^9.0.7",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.10.5",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}

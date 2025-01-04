@@ -1,0 +1,43 @@
+# .gitignore
+
+# Dependencies
+
+node_modules/
+
+# Build output
+
+dist/
+
+# Environment variables
+
+.env
+.env.\*
+
+# IDE
+
+.idea/
+.vscode/
+_.swp
+_.swo
+
+# Logs
+
+logs/
+_.log
+npm-debug.log_
+
+# Operating System
+
+.DS_Store
+Thumbs.db
+
+# Testing
+
+coverage/
+
+# Temporary files
+
+_.tmp
+_.temp
+
+---
